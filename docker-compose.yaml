@@ -1,0 +1,9 @@
+services:
+    frontend:
+        image: rehandaphedar/frensviewer
+        build:
+            context: '.'
+            dockerfile: 'Dockerfile'
+        command: ['node', '.']
+        ports:
+            - '3002:3000'
